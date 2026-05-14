@@ -44,5 +44,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 java {
-	sourceCompatibility = JavaVersion.VERSION_17
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
 }
